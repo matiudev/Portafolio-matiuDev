@@ -13,7 +13,9 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     padding: 30px 550px 100px 550px;
-    background: radial-gradient(circle at bottom, rgba(6, 4, 38, 1) 30%, rgb(26, 9, 51) 70%);
+    background: linear-gradient(180deg, rgba(1,4,21,1) 15%, rgba(17,20,41,1) 100%);
+
+
 
 }
 
@@ -26,21 +28,36 @@ header {
     left: 0;
     top: 0;
     right: 0;
-    /* background: radial-gradient(circle,
-            rgba(6, 4, 38, 1) 0%,
-            rgba(30, 7, 65, 1) 100%); */
     
 }
 
 nav ul {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 70px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(30, 30, 31, 0.329);
+}
+
+nav ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    backdrop-filter: blur(5px);
+    border-radius: inherit;
+    z-index: -1;
 }
 
 nav ul li {
     list-style: none;
+    filter: none;
 }
 
 nav ul li a {
