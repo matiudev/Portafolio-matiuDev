@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#main">Sobre mi</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#">Habilidades</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main" id="main">
+      <section class="main_section-presentacion" id="presentacion">
+        <div class="presentacion-1">
+          <div class="presentacion-nombre">
+            <div class="icono-presentacion">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <h1>Matias Garcia</h1>
+          </div>
+          <p>
+            No soy un Robot, soy un
+            <span class="resaltado-presentacion">desarrollador Web</span> <br />
+            apasionado por el mundo del
+            <span class="resaltado-presentacion2">
+              desarrollo y la programación</span
+            >.
+          </p>
+        </div>
+        <div class="email-container">
+          <div class="email-info">
+            <p id="correo">matiiasalberto.22@gmail.com</p>
+            <!-- Tu dirección de correo aquí -->
+          </div>
+          <div class="action-buttons">
+            <button class="action-button" onclick="enviarCorreo()">
+              <i class="fa-regular fa-paper-plane" style="color: #000000"></i>
+            </button>
+            <button class="action-button" onclick="copiarCorreo()">
+              <span id="copy-icon"
+                ><i class="fa-regular fa-copy" style="color: #000000"></i
+              ></span>
+              <i
+                id="check-icon"
+                class="fa-solid fa-check"
+                style="display: none; color: #000000"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="presentacion-2">
+          <div class="presentacion-social">
+            <div class="icono-social">
+              <i class="fas fa-at" style="color: #ffffff"></i>
+            </div>
+            <h2>Social</h2>
+          </div>
+          <div class="div_botones_sociales">
+            <button
+              class="botones-sociales"
+              onclick="location.href='https://github.com/matiudev'"
+            >
+              <i class="fa-brands fa-github" style="color: #ffffff"></i
+              ><span>GitHub</span>
+            </button>
+            <button
+              class="botones-sociales"
+              onclick="location.href='https://wa.me/56941128390?text=Hola,%20me%20interesa%20tu%20servicio%20como%20desarrollador%20web'"
+            >
+              <i class="fa-brands fa-whatsapp" style="color: #ffffff"></i
+              ><span>WhatsApp</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="main_section-proyectos" id="proyectos">
+        <div class="titulo-proyectos">
+          <div class="icono-estrella">
+            <i class="fa-solid fa-star" style="color: #ffffff"></i>
+          </div>
+          <h2>Proyectos</h2>
+        </div>
+        <article class="parent">
+          <div class="proyecto1">
+            <div class="proyecto-titulo">
+              <h3>Mimiz Pizzeria</h3>
+              <button class="botones-code" onclick="location.href='https://github.com/matiudev/Pizza-Anita'">
+                <span class="span-button_proyectos">Code</span>
+                <i class="fa-solid fa-link"></i>
+              </button>
+            </div>
+            <p>
+              Proyecto creado por mi hacia una pizzeria la cual busca ofrecer
+              sus productos de forma simple mediante un sitio web.
+            </p>
+            <div class="div-botones">
+              <button class="botones-proyectos1">
+                <i class="fa-brands fa-html5" style="color: #ff8800"></i
+                ><span class="textos-botones">HTML</span>
+              </button>
+              <button class="botones-proyectos2">
+                <i class="fa-brands fa-css3-alt" style="color: #005eff"></i
+                ><span class="textos-botones">CSS</span>
+              </button>
+              <button class="botones-proyectos3">
+                <i class="fa-brands fa-js" style="color: #ffbb00"></i
+                ><span class="textos-botones">JS</span>
+              </button>
+            </div>
+            <div class="proyecto-img">
+              <img src="img/pizzeria.png" alt="" />
+            </div>
+          </div>
+
+          <div class="proyecto1">
+            <div class="proyecto-titulo">
+              <h3>Gestor de Gastos e Ingresos</h3>
+              <button class="botones-code"
+                onclick="location.href='https://github.com/matiudev/Gastos-e-Ingresos'"
+              >
+                <span class="span-button_proyectos">Code</span>
+                <i class="fa-solid fa-link"></i>
+              </button>
+            </div>
+            <p>
+              Proyecto creado por mi para administrar el ingreso y gasto de
+              dinero a una cuenta. Los datos se representan en una grafica
+              circular para que se entienda de mejor manera.
+            </p>
+            <div class="div-botones">
+              <button class="botones-proyectos4">
+                <i class="fa-brands fa-react" style="color: #0b9eca"></i
+                ><span class="textos-botones">React</span>
+              </button>
+              <button class="botones-proyectos5">
+                <img
+                  class="imagen-tailwind"
+                  src="img/tailwind-icon.png"
+                  alt=""
+                /><span class="textos-botones">Tailwind</span>
+              </button>
+            </div>
+            <div class="proyecto-img">
+              <img src="img/gastos-e-ingresos.png" alt="" />
+            </div>
+          </div>
+
+          <div class="proyecto1">
+            <div class="proyecto-titulo">
+              <h3>
+                Sitio Web para reproducir <br />
+                peliculas y Series
+              </h3>
+              <button class="botones-code" onclick="location.href='https://github.com/matiudev/PelisDev'">
+                <span class="span-button_proyectos">Code</span>
+                <i class="fa-solid fa-link"></i>
+              </button>
+            </div>
+            <p>
+              Proyecto creado por mi para poder ver Series y Peliculas que esten
+              disponibles en estreno y con catálogo.
+            </p>
+            <div class="div-botones">
+              <button class="botones-proyectos1">
+                <i class="fa-brands fa-html5" style="color: #ff8800"></i
+                ><span class="textos-botones">HTML</span>
+              </button>
+              <button class="botones-proyectos2">
+                <i class="fa-brands fa-css3-alt" style="color: #005eff"></i
+                ><span class="textos-botones">CSS</span>
+              </button>
+              <button class="botones-proyectos3">
+                <i class="fa-brands fa-js" style="color: #ffbb00"></i
+                ><span class="textos-botones">JS</span>
+              </button>
+            </div>
+            <div class="proyecto-img">
+              <img src="img/pelisdev.png" alt="" />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="main_section-habilidades">
+        <div class="titulo-habilidades">
+          <div class="icono-code">
+            <i class="fa-solid fa-code" style="color: #ffffff"></i>
+          </div>
+          <h2>Habilidades</h2>
+        </div>
+        <div>
+          <div class="div_botones_habilidades">
+            <button id="botones-habilidades1" class="botones-habilidades">
+              <div class="div-botones-habilidades">
+                <img src="img/html-icon.png" alt="" />
+              </div>
+              <span>HTML</span>
+            </button>
+            <button id="botones-habilidades2" class="botones-habilidades">
+              <div class="div-botones-habilidades">
+                <img src="img/css-icon.png" alt="" />
+              </div >
+              <span>CSS</span>
+            </button>
+            <button id="botones-habilidades3" class="botones-habilidades">
+              <div class="div-botones-habilidades">
+                <img src="img/js-icon.png" alt="" />
+              </div>
+              <span>JavaScript</span>
+            </button>
+            <button id="botones-habilidades4" class="botones-habilidades">
+              <div class="div-botones-habilidades">
+                <img src="img/react-icon.png" alt="" />
+              </div>
+              <span>React</span>
+            </button>
+            <button id="botones-habilidades5" class="botones-habilidades">
+              <div class="div-botones-habilidades">
+                <img src="img/php-icon.png" alt="" />
+              </div>
+              <span>Php</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
