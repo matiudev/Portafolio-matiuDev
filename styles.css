@@ -529,6 +529,22 @@ p {
     .parent {
         gap: 50px;
     }
+
+    .email-container {
+        margin-right: 80px;
+    }
+
+    .email-info {
+        margin-top: 20px;
+        background-color: rgb(12, 18, 36); /* Color de fondo ajustado */
+        border: 2px rgb(39, 46, 64) solid;
+        border-radius: 15px;
+        padding: 10px 10px;
+    }
+    
+    #correo {
+        font-weight: 300;
+    }
 }
 
 
