@@ -517,6 +517,12 @@ p {
         padding: 0px 80px;
     }
 
+    .div-botones-sociales {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
     .div-botones-habilidades {
         display: flex;
         flex-wrap: wrap;
