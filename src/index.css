@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-poetsen: "Poetsen One", sans-serif;
+  --font-parkinsans: "Parkinsans", sans-serif;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #010415;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==== CALENDARIO CUSTOM ==== */
+.custom-calendar {
+  @apply rounded-2xl bg-white shadow-lg p-4;
+}
+
+.custom-calendar .react-calendar__navigation {
+  @apply flex items-center justify-between w-full text-xl;
+}
+
+.react-calendar__navigation__label {
+  @apply w-[40%] justify-center
+}
+/* Botones deshabilitados */
+.custom-calendar .react-calendar__navigation button:disabled {
+  @apply opacity-40 cursor-not-allowed bg-transparent text-gray-400 text-2xl;
+}
+
+.custom-calendar .react-calendar__navigation button {
+  @apply text-gray-700 font-semibold hover:bg-gray-100 rounded-lg transition ;
+}
+
+.custom-calendar .react-calendar__month-view__weekdays {
+  @apply text-gray-500 font-medium text-center py-2;
+}
+
+.custom-calendar .react-calendar__tile {
+  @apply text-gray-800 p-2 rounded-xl hover:bg-gray-100 transition;
+}
+
+.custom-calendar .react-calendar__tile--active {
+  @apply bg-black text-white rounded-xl hover:bg-gray-800;
+}
+
+.custom-calendar .react-calendar__tile--now {
+  @apply border border-gray-800 text-gray-800 font-semibold;
+}
+
+.custom-calendar .react-calendar__tile--active {
+  @apply text-white;
+}
+
+.custom-calendar .react-calendar__tile--disabled {
+  @apply opacity-40 cursor-not-allowed;
+}
+
+.custom-calendar .react-calendar__tile:disabled,
+.custom-calendar .react-calendar__tile--disabled {
+  @apply opacity-40 text-gray-400 cursor-not-allowed bg-gray-100;
+}
+
+.custom-calendar .react-calendar__tile:disabled:hover,
+.custom-calendar .react-calendar__tile--disabled:hover {
+  @apply bg-gray-100;
+}
