@@ -31,7 +31,7 @@ function Presentacion() {
 
       {/* Correo */}
       <div className='flex mt-6'>
-        <div className='w-3/4 bg-[#0c1224] mx-3 rounded-2xl border-2 border-[#272e40] hover:border-[#ffffff]'>
+        <div className='w-3/4 bg-[#0c1224] mr-3 sm:mx-3 rounded-2xl border-2 border-[#272e40] hover:border-[#ffffff]'>
           <p className='ml-4 py-2 font-semibold'>matiiasalberto.22@gmail.com</p>
         </div>
         <div className='flex items-center gap-2 w-1/4'>

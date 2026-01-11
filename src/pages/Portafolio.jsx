@@ -5,7 +5,7 @@ import Proyectos from '../components/Proyectos'
 
 function Portafolio() {
   return (
-    <div className="w-[870px]">
+    <div className="md:w-[870px] w-full max-w-7xl mx-auto">
       <Presentacion />
       <Proyectos />
     </div>

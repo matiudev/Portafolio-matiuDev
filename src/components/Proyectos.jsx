@@ -3,7 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 import pizzeria from "../assets/pizzeria.png";
 import specterGym from "../assets/specterGym.png";
 import pelisdev from "../assets/pelisdev.png";
-import cashflow from "../assets/cashflow.png"
+import cashflow from "../assets/cashflow.png";
 import { FaCss3, FaJs, FaHtml5, FaPaw } from "react-icons/fa";
 import {
   RiSupabaseFill,
@@ -76,7 +76,7 @@ const ICONS = {
     icon: () => <RiReactjsLine className="text-cyan-500" />,
     bg: "bg-cyan-500/20",
   },
-    Zustand: {
+  Zustand: {
     icon: () => <FaPaw className="text-orange-500" />,
     bg: "bg-orange-500/20",
   },
@@ -84,7 +84,7 @@ const ICONS = {
 
 const IconsLenguajes = ({ lenguajes }) => {
   return (
-    <div className="flex gap-4">
+    <div className="md:flex gap-4 grid grid-cols-3">
       {lenguajes.map((lang) => {
         const data = ICONS[lang] || {
           icon: () => <FaHtml5 className="text-gray-400" />,
@@ -94,13 +94,13 @@ const IconsLenguajes = ({ lenguajes }) => {
         const Icon = data.icon;
 
         return (
-          <div
-            key={lang}
-            className={`${data.bg} py-3 px-4 flex items-center gap-3 rounded-xl mb-5`}
-          >
-            <Icon />
-            <p className="font-semibold">{lang.replace("_", " ")}</p>
-          </div>
+            <div
+              key={lang}
+              className={`${data.bg} py-3 px-4 md:flex items-center gap-3 rounded-xl mb-5`}
+            >
+              <Icon />
+              <p className="font-semibold">{lang.replace("_", " ")}</p>
+            </div>
         );
       })}
     </div>
@@ -122,7 +122,10 @@ function Proyectos() {
               {proyecto.nombre}
             </p>
             {proyecto.web && (
-              <RouterLink to={proyecto.web} className="bg-white py-2 px-5 flex items-center gap-1 rounded-xl">
+              <RouterLink
+                to={proyecto.web}
+                className="bg-white py-2 px-5 flex items-center gap-1 rounded-xl"
+              >
                 <Link color="black" size={18} />
                 <p className="text-black text-base font-semibold">Web</p>
               </RouterLink>

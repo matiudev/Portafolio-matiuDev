@@ -9,8 +9,8 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if ('scrollRestoration' in window.history) {
-      window.history.scrollRestoration = 'manual';
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
     }
 
     window.scrollTo(0, 0);
@@ -23,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="flex justify-center">
+      <div className="w-full flex justify-center px-4 sm:px-6 lg:px-0">
         <Routes>
           <Route path="/" element={<Portafolio />} />
           <Route path="/PizzeriaOciia" element={<PizzeriaPage />} />
