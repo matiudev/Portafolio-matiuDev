@@ -4,7 +4,7 @@ import fondo from './src/fondo.jpg'
 import ListPeliculas from './components/ListPeliculas'
 function PelisDevPage() {
   return (
-    <div className='items-center w-full'>
+    <div className='w-full mx-auto px-2 items-center'>
       <Header />
       <div className='mx-[10%]'>
       <ListPeliculas />

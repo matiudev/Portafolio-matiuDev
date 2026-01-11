@@ -31,20 +31,35 @@ const navOptions = [
 
 function Header() {
   return (
-    <header className="flex items-center h-[15vh] px-[5%] sticky z-100 top-0 gap-15">
-      <div className="w-1/12 h-auto">
+    <header
+      className="
+        sticky top-0 z-50
+        flex items-center justify-between
+        h-16 md:h-[15vh]
+        px-4 md:px-[5%]
+        bg-transparent
+      "
+    >
+      {/* Logo */}
+      <div className="w-24 md:w-28">
         <img src={logo} alt="Logo Pizzeria" className="w-full cursor-pointer" />
       </div>
 
-      <nav className="w-11/12 flex justify-start items-center">
-        <ul className="flex justify-center items-center gap-[17vh] list-none text-gray-600 font-parkinsans font-medium">
+      {/* Nav Desktop */}
+      <nav className="hidden md:flex">
+        <ul className="flex items-center gap-20 text-gray-600 font-parkinsans font-medium">
           {navOptions.map((option, i) => {
             const Icon = option.icono;
             return (
               <li key={i}>
                 <a
                   href="#"
-                  className="hover:text-red-600  hover:border-red-600 hover:border-b-2 text-white flex gap-2"
+                  className="
+                    flex items-center gap-2
+                    hover:text-red-600
+                    hover:border-b-2 hover:border-red-600
+                    transition text-white
+                  "
                 >
                   <Icon />
                   {option.opcion}
@@ -54,8 +69,14 @@ function Header() {
           })}
         </ul>
       </nav>
+
+      {/* Botón menú móvil (opcional) */}
+      <button className="md:hidden text-white">
+        ☰
+      </button>
     </header>
   );
 }
+
 
 export default Header;

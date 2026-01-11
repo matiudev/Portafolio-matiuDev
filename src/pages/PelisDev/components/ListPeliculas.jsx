@@ -37,7 +37,7 @@ function ListPeliculas() {
       <p className="flex gap-3 font-semibold text-xl items-center mb-5">
         <Flame color="orange" /> Tendencia
       </p>
-      <div className="grid grid-cols-6 gap-14 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-14 mb-20">
         {data ? (
           data.Search.map((peli, i) => (
             <div key={i} className="items-center flex flex-col ">
@@ -58,7 +58,7 @@ function ListPeliculas() {
       <p className="flex gap-3 font-semibold text-xl items-center mb-5">
         <Ticket color="orange" /> Recien Estrenadas
       </p>
-      <div className="grid grid-cols-6 gap-14 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-14 mb-20">
         {peliculasRecienEstrenadas.map((peli, i) => (
           <div key={i} className="items-center flex flex-col ">
             <img
@@ -73,7 +73,7 @@ function ListPeliculas() {
       <p className="flex gap-3 font-semibold text-xl items-center mb-5">
         <Ticket color="orange" /> Series Populares
       </p>
-      <div className="grid grid-cols-6 gap-14 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-14 mb-20">
         {seriesPopulares.map((peli, i) => (
           <div key={i} className="items-center flex flex-col ">
             <img
