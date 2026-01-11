@@ -23,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="w-full flex justify-center px-4 sm:px-6 lg:px-0">
+      <div className="w-full justify-center sm:px-6 lg:px-0">
         <Routes>
           <Route path="/" element={<Portafolio />} />
           <Route path="/PizzeriaOciia" element={<PizzeriaPage />} />

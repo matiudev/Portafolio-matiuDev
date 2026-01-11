@@ -6,12 +6,14 @@ import Footer from "../../components/Footer";
 
 function PizzeriaPage() {
   return (
-    <div className="items-center w-full bg-white">
-      <Header />
-      <HeroSection />
-      <MenuPizzas />
+    <>
+      <div className="bg-white w-full mx-auto px-2 items-center">
+        <Header />
+        <HeroSection />
+        <MenuPizzas />
+      </div>
       <Footer background="bg-red-600" />
-    </div>
+    </>
   );
 }
 

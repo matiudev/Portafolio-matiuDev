@@ -26,11 +26,11 @@ function ModalPizza({ visible, pizza, onClose }) {
 
   return (
     <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-150 text-black">
-      <div className="bg-white p-6 rounded-xl shadow-xl w-[40%]">
+      <div className="bg-white p-6 rounded-xl shadow-xl md:w-[40%] w-[90%]">
         <button onClick={onClose} className="mb-4">
           <X />
         </button>
-        <div className="flex gap-6">
+        <div className="md:flex gap-6">
           <img src={pizza.img} className="rounded-t-2xl h-56 object-cover" />
           <div>
             <h2 className="text-2xl font-bold text-black">{pizza.nombre}</h2>

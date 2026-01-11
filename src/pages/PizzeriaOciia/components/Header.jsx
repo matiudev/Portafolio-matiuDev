@@ -10,13 +10,24 @@ function Header() {
   const [visibleCart, setVisibleCart] = useState(false);
 
   return (
-    <header className="flex justify-between items-center h-[15vh] px-[10%] sticky z-100 top-0 bg-[#fffefef3]">
+    <header
+      className="
+  sticky top-0 z-50 bg-[#fffefef3]
+  h-16 md:h-[15vh]
+  px-4 md:px-[10%]
+  flex justify-between items-center
+"
+    >
+      {" "}
       <div className="w-1/10 h-auto">
-        <img src={logo} alt="Logo Pizzeria" className="w-full cursor-pointer" />
+        <img
+          src={logo}
+          alt="Logo Pizzeria"
+          className="cursor-pointer w-24 md:w-32"
+        />
       </div>
-
-      <nav className="w-8/10 flex justify-center items-center">
-        <ul className="flex justify-center items-center gap-[17vh] list-none text-gray-600 font-parkinsans font-medium">
+      <nav className="hidden md:flex flex-1 justify-center">
+        <ul className="flex gap-20 text-gray-600 font-parkinsans font-medium">
           <li>
             <a
               href=""
@@ -44,7 +55,14 @@ function Header() {
         </ul>
       </nav>
       <a className="flex gap-2">
-        <button className="font-bold text-white py-2 px-5 bg-[#ed1e10] rounded-4xl cursor-pointer font-parkinsans text-sm">
+        <button
+          className="
+    hidden sm:block
+    font-bold text-white py-2 px-5
+    bg-[#ed1e10] rounded-full
+    font-parkinsans text-sm
+  "
+        >
           Contact
         </button>
 
@@ -65,7 +83,7 @@ function Header() {
       </a>
       {visibleCart && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-end z-150 text-black">
-          <div className="bg-white p-6 rounded-l-xl shadow-xl h-full w-1/5">
+          <div className="bg-white p-6 rounded-l-xl shadow-xl h-full md:w-1/5 w-[95%]">
             <div className="flex justify-between">
               <h4 className="font-bold text-2xl text-red-600 font-poetsen mb-5">
                 TU PEDIDO
@@ -75,7 +93,9 @@ function Header() {
             {products.map((product, index) => (
               <div key={index} className="mb-5">
                 <div className="flex justify-between">
-                  <p className="font-bold font-parkinsans ">{product.nombre} - {product.tamaño}</p>
+                  <p className="font-bold font-parkinsans ">
+                    {product.nombre} - {product.tamaño}
+                  </p>
                   <div className="flex gap-2">
                     <p
                       className="rounded-full border-red-600 border px-1 items-center flex"

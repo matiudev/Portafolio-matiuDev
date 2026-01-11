@@ -9,14 +9,9 @@ const pizzas = [
     precio: 12990,
     ingredientes: [
       "Tomate",
-      "Mozzarella",
       "Albahaca",
       "Tomate",
       "Mozzarella",
-      "Albahaca",
-      "Tomate",
-      "Mozzarella",
-      "Albahaca",
     ],
     valoracion: 4.5,
     img: "https://imag.bonviveur.com/pizza-margarita.jpg",
@@ -117,7 +112,7 @@ function MenuPizzas() {
   };
 
   return (
-    <div className="px-[10%] mb-30">
+    <div className="px-[10%] pb-30">
       <h4 className="text-gray-800 text-4xl font-bold font-parkinsans">
         Menú de Pizzas
       </h4>
@@ -126,7 +121,7 @@ function MenuPizzas() {
         del mundo
       </p>
 
-      <div className="grid grid-cols-4 gap-12 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mt-8">
         {pizzas.map((pizza) => (
           <div
             className="border border-gray-200 rounded-2xl flex flex-col"
