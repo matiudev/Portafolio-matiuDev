@@ -1,16 +1,66 @@
-# React + Vite
+# 👋 Portafolio — matiuDev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portafolio de desarrollo. Aquí encontrarás el código fuente de mi sitio personal y los proyectos web y móviles que he construido.
 
-Currently, two official plugins are available:
+🌐 **[matiudev.vercel.app](https://matiudev.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Tecnologías que manejo
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+**Frontend Web**
+- React
+- Tailwind CSS
+- Zustand
 
-## Expanding the ESLint configuration
+**Mobile**
+- React Native / Expo
+- NativeWind
+- Zustand
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Proyectos destacados
+
+### 📱 CashFlow
+App móvil de finanzas personales para registrar y controlar ingresos y gastos.
+Desarrollada con **React Native**, **Expo 53**, **NativeWind** y **Zustand**.
+
+---
+
+### 🍕 Pizzería Ociia
+Aplicación web para una pizzería con experiencia interactiva para explorar el menú, gestionar el carrito de compras y rastrear el estado del pedido.
+Desarrollada con **React** y **Tailwind CSS**.
+
+---
+
+### 🏋️ Specter GYM
+Aplicación web para un gimnasio que permite reservar visitas y gestionar la matrícula de forma interactiva.
+Desarrollada con **React** y **Tailwind CSS**.
+
+---
+
+### 🎬 PelisDev
+Catálogo interactivo de películas y series con exploración por categorías (películas, series y tendencias), interfaz responsive, animaciones dinámicas y consumo de API externa.
+Desarrollada con **React** y **Tailwind CSS**.
+
+---
+
+## 📂 Estructura del repositorio
+
+```
+Portafolio-matiuDev/
+├── portafolio/       # Código fuente del sitio personal
+├── cashflow/         # App móvil de finanzas
+├── pizzeria-ociia/   # Web de pizzería
+├── specter-gym/      # Web de gimnasio
+└── pelisdev/         # Catálogo de películas
+```
+---
+
+## 📬 Contacto
+
+¿Tienes un proyecto en mente o quieres ponerte en contacto?
+
+- 🌐 [matiudev.vercel.app](https://matiudev.vercel.app/)
+- 📧 matiiasalberto.22@gmail.com ← reemplaza con tu email
